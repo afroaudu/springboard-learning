@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Meme Generator</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    
+    <style>
+        .meme-generator {
+            margin: 20px auto;
+            width: 400px;
+            font-family: sans-serif;
+        }
+
+            .meme-generator label{
+                display: block;
+                font-weight: bold;
+                margin-bottom: 10px;
+            }
+            .meme-generator input{
+                width: 100%;
+                box-sizing: border-box;
+                margin-bottom: 20px;
+            }
+            #meme{
+                width: 100%;
+            }
+    </style>
+</head>
+<body>
+    <div class="meme-generator">
+    <label>Select an Image</label>
+    <input type="file" id="imageFileInput">
+    <label>Top Text</label>
+    <input type="text" id="topTextInput">
+    <label>Bottom Text</label>
+    <input tye="text" id="bottomTextInput">
+
+    <canvas id="meme"></canvas>
+    </div>
+    <script src='main.js'></script>
+</body>
+</html>
