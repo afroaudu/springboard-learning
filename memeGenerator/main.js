@@ -43,7 +43,8 @@ function updateMemeCanvas(canvas, image, topText, bottomText) {
   ctx.lineJoin = 'round';
   ctx.font = `${fontSize}px san-serif`;
 
-  //Add top text
+  //Add top texts
+
   ctx.textBaseline = 'top';
   ctx.strokeText(topText, width / 2, yOffset);
   ctx.fillText(topText, width / 2, yOffset);
