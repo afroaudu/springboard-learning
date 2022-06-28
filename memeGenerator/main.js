@@ -53,3 +53,17 @@ function updateMemeCanvas(canvas, image, topText, bottomText) {
   ctx.strokeText(bottomText, width / 2, height - yOffset);
   ctx.fillText(bottomText, width / 2, height- yOffset);
 }
+
+let save = document.getElementById('save')
+save.addEventListener('click', function () {
+    let data = canvas.toDataURL()
+    let link = document.createElement('a')
+    link.href = data
+    link.download = 'image.png'
+    link.click()
+
+})
+let remove = document.getElementById('delete')
+remove.addEventListener(click, function () {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+})
